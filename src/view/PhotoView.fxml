@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ListView?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Text?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="660.0" xmlns="http://javafx.com/javafx/18" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controller.PhotoViewController">
+   <padding>
+      <Insets bottom="10.0" left="10.0" right="10.0" top="10.0" />
+   </padding>
+   <children>
+      <Button fx:id="mLogOut" layoutX="14.0" layoutY="14.0" mnemonicParsing="false" onAction="#logOut" text="Logout" />
+      <Button fx:id="mBack" layoutX="584.0" layoutY="14.0" mnemonicParsing="false" onAction="#back" text="&lt;-- Back" />
+      <ImageView fx:id="displayArea" fitHeight="250.0" fitWidth="400.0" layoutX="41.0" layoutY="64.0" pickOnBounds="true" preserveRatio="true" />
+      <Text layoutX="41.0" layoutY="334.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Caption:" />
+      <TextField fx:id="tfCaption" layoutX="41.0" layoutY="345.0" promptText="Enter Caption" />
+      <Button fx:id="mCaption" layoutX="204.0" layoutY="345.0" mnemonicParsing="false" onAction="#saveCaption" text="Add / Edit Caption" />
+      <Text layoutX="450.0" layoutY="60.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Photo Tags:" />
+      <ListView fx:id="listview" layoutX="450.0" layoutY="73.0" prefHeight="200.0" prefWidth="200.0" />
+      <Text layoutX="458.0" layoutY="298.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Tag Name: " />
+      <TextField fx:id="tfTagName" layoutX="519.0" layoutY="281.0" prefHeight="25.0" prefWidth="128.0" promptText="Enter Tag Name" />
+      <Text layoutX="458.0" layoutY="326.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Tag Value:" />
+      <TextField fx:id="tfTagValue" layoutX="519.0" layoutY="309.0" prefHeight="25.0" prefWidth="128.0" promptText="Enter Tag Value" />
+      <Button fx:id="mAddTag" layoutX="481.0" layoutY="345.0" mnemonicParsing="false" onAction="#addTag" text="Add Tag" />
+      <Button fx:id="mDeleteTag" layoutX="573.0" layoutY="345.0" mnemonicParsing="false" onAction="#deleteTag" text="Delete Tag" />
+      <Text layoutX="204.0" layoutY="51.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Photo Display" />
+   </children>
+</AnchorPane>

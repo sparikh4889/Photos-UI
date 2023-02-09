@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ListView?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Text?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/18" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controller.AlbumViewController">
+   <padding>
+      <Insets bottom="10.0" left="10.0" right="10.0" top="10.0" />
+   </padding>
+   <children>
+      <ListView fx:id="listview" layoutX="15.0" layoutY="50.0" prefHeight="290.0" prefWidth="250.0" />
+      <Text layoutX="80.0" layoutY="30.0" strokeType="OUTSIDE" strokeWidth="0.0" text="List of Photos in Album:" />
+      <Button fx:id="mLogOut" layoutX="14.0" layoutY="13.0" mnemonicParsing="false" onAction="#logOut" text="Logout" />
+      <Text layoutX="280.0" layoutY="30.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Thumbnail:" />
+      <Button fx:id="mBack" layoutX="534.0" layoutY="13.0" mnemonicParsing="false" onAction="#back" text="&lt;-- Back" />
+      <Text fx:id="tCaption" layoutX="276.0" layoutY="244.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Caption:" />
+      <Text fx:id="tDate" layoutX="276.0" layoutY="262.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Date(s):" />
+      <Button fx:id="mAdd" layoutX="300.0" layoutY="281.0" mnemonicParsing="false" onAction="#addPhoto" text="Add Photo" />
+      <Button fx:id="mSlideShow" layoutX="402.0" layoutY="281.0" mnemonicParsing="false" onAction="#slideshow" prefWidth="73.0" text="Slideshow" />
+      <Button fx:id="mDelete" layoutX="500.0" layoutY="281.0" mnemonicParsing="false" onAction="#deletePhoto" text="Delete Photo" />
+      <ImageView fx:id="displayArea" fitHeight="175.0" fitWidth="300.0" layoutX="282.0" layoutY="50.0" pickOnBounds="true" preserveRatio="true" />
+      <Text layoutX="298.0" layoutY="336.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Copy Photo To:" />
+      <TextField fx:id="tfCopy" layoutX="385.0" layoutY="319.0" promptText="Album Name" />
+      <Button fx:id="mCopy" layoutX="543.0" layoutY="319.0" mnemonicParsing="false" onAction="#copy" text="Copy" />
+      <Text layoutX="298.0" layoutY="369.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Move Photo To:" />
+      <TextField fx:id="tfMove" layoutX="385.0" layoutY="352.0" promptText="Album Name" />
+      <Button fx:id="mMove" layoutX="542.0" layoutY="352.0" mnemonicParsing="false" onAction="#move" text="Move" />
+      <Button fx:id="mDisplay" layoutX="95.0" layoutY="352.0" mnemonicParsing="false" onAction="#display" text="Display Photo" />
+   </children>
+</AnchorPane>
